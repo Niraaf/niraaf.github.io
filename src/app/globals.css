@@ -1,0 +1,47 @@
+/* globals.css */
+@import "tailwindcss";
+
+/* Default (Light Mode) */
+:root {
+  --background: #F8F5E9;
+  --foreground: #597E52;
+  --accent: #C6A969;
+  --secondary-accent: #F1E4C3;
+}
+
+/* Custom themes */
+[data-theme="light"] {
+  --background: #F8F5E9;
+  --foreground: #597E52;
+  --accent: #C6A969;
+  --secondary-accent: #F1E4C3;
+}
+
+[data-theme="dark"] {
+  --background: #121212;
+  --foreground: #1be0d0;
+  --accent: #db9a18;
+  --secondary-accent: #F1E4C3;
+}
+
+[data-theme="blue"] {
+  --background: #001f3f;
+  --foreground: #ffffff;
+}
+
+[data-theme="sepia"] {
+  --background: #f5e6cc;
+  --foreground: #5b4636;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav,
+button {
+  background: var(--accent);
+  color: var(--background);
+}
