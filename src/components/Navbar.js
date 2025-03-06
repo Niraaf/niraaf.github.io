@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import Link from 'next/link'; // Import Link from next/link
+import Link from 'next/link';
 
 export default function Navbar() {
   const [currentTheme, setCurrentTheme] = useState('light');
@@ -20,13 +20,16 @@ export default function Navbar() {
         <div className="container mx-auto flex items-center justify-between px-4">
           <ul className="flex space-x-8 w-full justify-center">
             <li className="ease-in-out transition transform">
-              <Link href="/">Home</Link> {/* Replaced <a> with <Link /> */}
+              <Link href="/">Home</Link>
             </li>
             <li className="ease-in-out transition transform">
-              <Link href="/about">About</Link> {/* Replaced <a> with <Link /> */}
+              <Link href="/about">About</Link>
             </li>
             <li className="ease-in-out transition transform">
-              <Link href="/contact">Contact</Link> {/* Replaced <a> with <Link /> */}
+              <Link href="/contact">Projects</Link>
+            </li>
+            <li className="ease-in-out transition transform">
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
