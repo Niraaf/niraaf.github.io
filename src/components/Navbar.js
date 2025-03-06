@@ -26,7 +26,7 @@ export default function Navbar() {
               <Link href="/about">About</Link>
             </li>
             <li className="ease-in-out transition transform">
-              <Link href="/contact">Projects</Link>
+              <Link href="/projects">Projects</Link>
             </li>
             <li className="ease-in-out transition transform">
               <Link href="/contact">Contact</Link>
